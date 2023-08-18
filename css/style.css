@@ -2621,7 +2621,7 @@ button,
   gap: 22px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 580px;
+  max-width: 600px;
 }
 @media (max-width: 1199px) {
   .main-footer__menu {
