@@ -4,1475 +4,949 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Организация походов в горы">
-    <title>Lifetour</title>
+    <meta name="description" content="Повышение квалификации молодых специалистов.">
+    <title>Masa</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   </head>
   <body>
-    <h1 class="visually-hidden">Главная страница</h1>
     <div class="page__container">
 
       <header class="main-header">
-        <div class="main-header__container main-header__container--no-js">
-          <button class="main-header__menu-toggle">
-            <span class="main-header__icon-menu">
-              <svg width="26" height="26" fill="#ffffff">
-                <use xlink:href="./img/sprite.svg#menu"></use>
-              </svg>
-            </span>
-            <span class="main-header__icon-cross visually-hidden">
-              <svg width="26" height="26" stroke="#2D383F">
-                <use xlink:href="./img/sprite.svg#cross"></use>
-              </svg>
-            </span>
-          </button>
-          <a class="main-header__logo" href="index.html" aria-label="Логотип. Перейти на главную.">
-            <svg width="205" height="62" fill="#ffffff">
+        <div class="main-header__container container">
+          <a class="main-header__logo link" href="index.html" aria-label="Логотип. Перейти на главную.">
+            <svg width="52" height="52">
               <use xlink:href="./img/sprite.svg#logotype"></use>
             </svg>
           </a>
-          <div class="main-navigation main-navigation--no-js">
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#nearest-tours">Туры</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#training">Обучение</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#about">О нас</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#reviews">Отзывы</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#photo-gallery">Фотографии</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link menu-item menu-item--light" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-header__phone-wrapper">
-            <a class="main-header__phone link link--light" href="tel:88007253232">
-              8 800 725 32 32
-            </a>
-          </div>
+          <button class="main-header__button menu-button" data-open-modal="menu">
+            <span class="menu-button__text">Меню</span>
+            <span class="menu-button__icon-wrapper">
+              <span class="menu-button__icon-menu">
+                <svg width="20" height="10" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-menu"></use>
+                </svg>
+              </span>
+              <span class="menu-button__icon-cross">
+                <svg width="16" height="16" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-cross"></use>
+                </svg>
+              </span>
+            </span>
+          </button>
         </div>
       </header>
 
       <main class="main-container">
+        <h1 class="visually-hidden">Главная страница</h1>
 
-        <section class="hero">
+        <section class="hero" id="hero">
           <h2 class="visually-hidden">Геройский блок</h2>
           <div class="hero__container">
-            <div class="hero__swiper swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide hero__slide">
-                  <div class="hero__slide-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-1-m.webp 1x, ./img/hero/hero-1-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-1-t.webp 1x, ./img/hero/hero-1-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/hero/hero-1-d.webp 1x, ./img/hero/hero-1-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-1-m.jpg 1x, ./img/hero/hero-1-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-1-t.jpg 1x, ./img/hero/hero-1-t@2x.jpg 2x">
-                      <img width="1440" height="800" alt="#" src="./img/hero/hero-1-d.jpg" srcset="./img/hero/hero-1-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="hero__slide-container">
-                    <div class="hero__content-wrapper">
-                      <p class="hero__title">Захватывающие вершины Кавказа</p>
-                      <p class="hero__text">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                      <a class="hero__link button" href="#">Смотреть тур</a>
-                      <div class="hero__video">
-                        <div class="hero__video-preview">
-                          <picture>
-                            <source media="(max-width: 768px)" width="442" height="300" srcset="./img/hero/hero-1-video-t.webp 1x, ./img/hero/hero-1-video-t@2x.webp 2x" type="image/webp">
-                            <source srcset="./img/hero/hero-1-video-d.webp 1x, ./img/hero/hero-1-video-d@2x.webp 2x" type="image/webp">
-                            <source media="(max-width: 768px)" width="442" height="300" srcset="./img/hero/hero-1-video-t.jpg 1x, ./img/hero/hero-1-video-t@2x.jpg 2x">
-                            <img width="482" height="317" alt="Превью видео." src="./img/hero/hero-1-video-d.jpg" srcset="./img/hero/hero-1-video-d@2x.jpg 2x">
-                          </picture>
-                        </div>
-                        <button class="play-button" aria-label="Включить видео">
-                          <span class="play-button__default">
-                            <svg width="56" height="56">
-                              <use xlink:href="./img/sprite.svg#play-default"></use>
-                            </svg>
-                          </span>
-                          <span class="play-button__focus" aria-hidden="true">
-                            <svg width="56" height="56">
-                              <use xlink:href="./img/sprite.svg#play-focus"></use>
-                            </svg>
-                          </span>
-                          <span class="play-button__active" aria-hidden="true">
-                            <svg width="56" height="56">
-                              <use xlink:href="./img/sprite.svg#play-active"></use>
-                            </svg>
-                          </span>
-                          <span class="play-button__disabled" aria-hidden="true">
-                            <svg width="56" height="56">
-                              <use xlink:href="./img/sprite.svg#play-disabled"></use>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="hero__trail-description">
-                      <div class="hero__trail hero__trail--duration">
-                        <svg width="12" height="12" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        6 дней/5 ночей
-                      </div>
-                      <div class="hero__trail hero__trail--difficulty">
-                        <svg width="12" height="12" stroke="#ffffff">
-                          <use xlink:href="./img/sprite.svg#level"></use>
-                        </svg>
-                        Высокая сложность
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="swiper-slide hero__slide">
-                  <div class="hero__slide-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-2-m.webp 1x, ./img/hero/hero-2-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-2-t.webp 1x, ./img/hero/hero-2-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/hero/hero-2-d.webp 1x, ./img/hero/hero-2-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-2-m.jpg 1x, ./img/hero/hero-2-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-2-t.jpg 1x, ./img/hero/hero-2-t@2x.jpg 2x">
-                      <img width="1440" height="800" alt="#" src="./img/hero/hero-2-d.jpg" srcset="./img/hero/hero-2-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="hero__slide-container">
-                    <div class="hero__content-wrapper">
-                      <p class="hero__title">Невероятная природа Камчатки</p>
-                      <p class="hero__text">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                      <a class="hero__link button" href="#">Смотреть тур</a>
-                      <div class="hero__photos">
-                        <div class="hero__first-photo">
-                          <picture>
-                            <source media="(max-width: 768px)" width="266" height="351" srcset="./img/hero/hero-2-card1-t.webp 1x, ./img/hero/hero-2-card1-t@2x.webp 2x" type="image/webp">
-                            <source srcset="./img/hero/hero-2-card1-t.webp 1x, ./img/hero/hero-2-card1-t@2x.webp 2x" type="image/webp">
-                            <source media="(max-width: 768px)" width="266" height="351" srcset="./img/hero/hero-2-card1-t.jpg 1x, ./img/hero/hero-2-card1-t@2x.jpg 2x">
-                            <img width="308" height="407" alt="Небольшое озеро в горах." src="./img/hero/hero-2-card1-d.png.jpg" srcset="./img/hero/hero-2-card1-d@2x.jpg 2x">
-                          </picture>
-                        </div>
-                        <div class="hero__second-photo">
-                          <picture>
-                            <source media="(max-width: 768px)" width="236" height="312" srcset="./img/hero/hero-2-card2-t.webp 1x, ./img/hero/hero-2-card2-t@2x.webp 2x" type="image/webp">
-                            <source srcset="./img/hero/hero-2-card2-t.webp 1x, ./img/hero/hero-2-card2-t@2x.webp 2x" type="image/webp">
-                            <source media="(max-width: 768px)" width="236" height="312" srcset="./img/hero/hero-2-card2-t.jpg 1x, ./img/hero/hero-2-card2-t@2x.jpg 2x">
-                            <img width="277" height="366" alt="Девушка идёт в гору." src="./img/hero/hero-2-card2-d.png.jpg" srcset="./img/hero/hero-2-card2-d@2x.jpg 2x">
-                          </picture>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="hero__trail-description">
-                      <div class="hero__trail hero__trail--duration">
-                        <svg width="12" height="12" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        9 дней/10 ночей
-                      </div>
-                      <div class="hero__trail hero__trail--difficulty">
-                        <svg width="12" height="12" stroke="#ffffff">
-                          <use xlink:href="./img/sprite.svg#level"></use>
-                        </svg>
-                        Средняя сложность
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide hero__slide">
-                  <div class="hero__slide-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-3-m.webp 1x, ./img/hero/hero-3-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-3-t.webp 1x, ./img/hero/hero-3-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/hero/hero-3-d.webp 1x, ./img/hero/hero-3-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/hero-3-m.jpg 1x, ./img/hero/hero-3-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/hero-3-t.jpg 1x, ./img/hero/hero-3-t@2x.jpg 2x">
-                      <img width="1440" height="800" alt="#" src="./img/hero/hero-3-d.jpg" srcset="./img/hero/hero-3-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="hero__slide-container">
-                    <div class="hero__content-wrapper">
-                      <p class="hero__title">Магические пейзажи Алтайского Края</p>
-                      <p class="hero__text">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                      <a class="hero__link button" href="#">Смотреть тур</a>
-                      <div class="hero__audio audio-player">
-                        <div class="audio-player__wrapper">
-                          <div class="audio-player__track-info">
-                            <span class="audio-player__track-title">Алтай</span>
-                            <span class="audio-player__track-artist">Lifetour</span>
-                          </div>
-                          <div class="audio-player__top-buttons">
-                            <svg width="17" height="17">
-                              <use xlink:href="./img/sprite.svg#heart"></use>
-                            </svg>
-                            <svg width="17" height="17">
-                              <use xlink:href="./img/sprite.svg#share"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="audio-player__time-line"></div>
-                        <div class="audio-player__time">
-                          <span>2:30</span>
-                          <span>4:16</span>
-                        </div>
-                        <div class="audio-player__control">
-                          <svg width="25" height="25">
-                            <use xlink:href="./img/sprite.svg#shuffle"></use>
-                          </svg>
-                          <div class="audio-player__main-buttons">
-                            <svg width="20" height="20">
-                              <use xlink:href="./img/sprite.svg#previous"></use>
-                            </svg>
-                            <button class="audio-player__play-button">
-                              <svg width="47" height="47">
-                                <use xlink:href="./img/sprite.svg#play"></use>
-                              </svg>
-                            </button>
-                            <svg width="20" height="20">
-                              <use xlink:href="./img/sprite.svg#next"></use>
-                            </svg>
-                          </div>
-                          <svg width="25" height="25">
-                            <use xlink:href="./img/sprite.svg#repeat"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="hero__trail-description">
-                      <div class="hero__trail hero__trail--duration">
-                        <svg width="12" height="12" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        8 дней/7 ночей
-                      </div>
-                      <div class="hero__trail hero__trail--difficulty">
-                        <svg width="12" height="12" stroke="#ffffff">
-                          <use xlink:href="./img/sprite.svg#level"></use>
-                        </svg>
-                        Легкая сложность
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="hero__pagination swiper-pagination"></div>
-          </div>
-        </section>
-
-        <section class="nearest-tours" id="nearest-tours">
-
-          <div class="nearest-tours__bg nearest-tours__bg--left">
-            <picture>
-              <source srcset="./img/tours/clouds-left.webp 1x, ./img/tours/clouds-left@2x.webp 2x" type="image/webp">
-              <img width="418" height="279" alt="#" src="./img/tours/clouds-left.png" srcset="./img/tours/clouds-left@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
-          <div class="nearest-tours__bg nearest-tours__bg--right">
-            <picture>
-              <source srcset="./img/tours/clouds-right.webp 1x, ./img/tours/clouds-right@2x.webp 2x" type="image/webp">
-              <img width="602" height="1364" alt="#" src="./img/tours/clouds-right.png" srcset="./img/tours/clouds-right@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
-
-          <div class="nearest-tours__container">
-
-            <div class="nearest-tours__title title-block">
-              <h2 class="title-block__title">Ближайшие туры</h2>
-              <span class="title-block__title-shadow">Ближайшие туры</span>
-            </div>
-
-            <div class="nearest-tours__buttons-wrapper slider-buttons">
-              <div class="nearest-tours__button-prev slider-buttons__prev swiper-button-prev">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </div>
-              <div class="nearest-tours__button-next slider-buttons__next swiper-button-next">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="nearest-tours__swiper swiper">
+            <div class="hero__swiper hero__swiper--bg swiper">
               <div class="swiper-wrapper">
 
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__slide-bg">
                     <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.webp 1x, ./img/tours/tour-elbrus-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.webp 1x, ./img/tours/tour-elbrus-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-elbrus-d.webp 1x, ./img/tours/tour-elbrus-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.jpg 1x, ./img/tours/tour-elbrus-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.jpg 1x, ./img/tours/tour-elbrus-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-elbrus-d.jpg" srcset="./img/tours/tour-elbrus-d@2x.jpg 2x" aria-hidden="true">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-1-m.webp 1x, ./img/hero/bg-1-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-1-t.webp 1x, ./img/hero/bg-1-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/bg-1-d.webp 1x, ./img/hero/bg-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-1-m.jpg 1x, ./img/hero/bg-1-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-1-t.jpg 1x, ./img/hero/bg-1-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/bg-1-d.jpg" srcset="./img/hero/bg-1-d@2x.jpg 2x" aria-hidden="true">
                     </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper tour-card__first-wrapper--alt">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Кавказ
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        4 дня</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        3 ночи</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Путешествие вокруг Эльбруса</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">12.06-19.06</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 15 чел.</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
+                <div class="swiper-slide hero__slider">
+                  <div class="hero__slide-bg">
                     <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.webp 1x, ./img/tours/tour-beluha-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.webp 1x, ./img/tours/tour-beluha-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-beluha-d.webp 1x, ./img/tours/tour-beluha-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.jpg 1x, ./img/tours/tour-beluha-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.jpg 1x, ./img/tours/tour-beluha-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-beluha-d.jpg" srcset="./img/tours/tour-beluha-d@2x.jpg 2x" aria-hidden="true">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-2-m.webp 1x, ./img/hero/bg-2-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-2-t.webp 1x, ./img/hero/bg-2-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/bg-2-d.webp 1x, ./img/hero/bg-2-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-2-m.jpg 1x, ./img/hero/bg-2-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-2-t.jpg 1x, ./img/hero/bg-2-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/bg-2-d.jpg" srcset="./img/hero/bg-2-d@2x.jpg 2x" aria-hidden="true">
                     </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place tour-card__place--alt">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Алтай
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        14 дней</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        13 ночей</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Путь к&nbsp;подножию Белухи</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">14.06-23.06</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 25 чел.</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__slide-bg">
                     <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.webp 1x, ./img/tours/tour-fisht-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.webp 1x, ./img/tours/tour-fisht-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-fisht-d.webp 1x, ./img/tours/tour-fisht-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.jpg 1x, ./img/tours/tour-fisht-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.jpg 1x, ./img/tours/tour-fisht-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-fisht-d.jpg" srcset="./img/tours/tour-fisht-d@2x.jpg 2x" aria-hidden="true">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-3-m.webp 1x, ./img/hero/bg-3-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-3-t.webp 1x, ./img/hero/bg-3-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/bg-3-d.webp 1x, ./img/hero/bg-3-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="320" height="568" srcset="./img/hero/bg-3-m.jpg 1x, ./img/hero/bg-3-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="768" height="1024" srcset="./img/hero/bg-3-t.jpg 1x, ./img/hero/bg-3-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/bg-3-d.jpg" srcset="./img/hero/bg-3-d@2x.jpg 2x" aria-hidden="true">
                     </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Адыгея
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        7 дней</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        6 ночей</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Через Фишт к&nbsp;Черному морю</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">15.07-19.07</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 22 чел.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.webp 1x, ./img/tours/tour-elbrus-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.webp 1x, ./img/tours/tour-elbrus-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-elbrus-d.webp 1x, ./img/tours/tour-elbrus-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.jpg 1x, ./img/tours/tour-elbrus-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.jpg 1x, ./img/tours/tour-elbrus-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-elbrus-d.jpg" srcset="./img/tours/tour-elbrus-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper tour-card__first-wrapper--alt">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Кавказ
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        4 дня</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        3 ночи</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Путешествие вокруг Эльбруса</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">12.06-19.06</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 15 чел.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.webp 1x, ./img/tours/tour-beluha-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.webp 1x, ./img/tours/tour-beluha-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-beluha-d.webp 1x, ./img/tours/tour-beluha-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.jpg 1x, ./img/tours/tour-beluha-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.jpg 1x, ./img/tours/tour-beluha-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-beluha-d.jpg" srcset="./img/tours/tour-beluha-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place tour-card__place--alt">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Алтай
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        14 дней</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        13 ночей</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Путь к&nbsp;подножию Белухи</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">14.06-23.06</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 25 чел.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="nearest-tours__slide tour-card swiper-slide">
-                  <div class="tour-card-bg">
-                    <picture>
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.webp 1x, ./img/tours/tour-fisht-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.webp 1x, ./img/tours/tour-fisht-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/tours/tour-fisht-d.webp 1x, ./img/tours/tour-fisht-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.jpg 1x, ./img/tours/tour-fisht-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.jpg 1x, ./img/tours/tour-fisht-t@2x.jpg 2x">
-                      <img width="380" height="412" alt="#" src="./img/tours/tour-fisht-d.jpg" srcset="./img/tours/tour-fisht-d@2x.jpg 2x" aria-hidden="true">
-                    </picture>
-                  </div>
-                  <div class="tour-card__container">
-                    <div class="tour-card__first-wrapper">
-                      <div class="tour-card__place-wrapper">
-                        <span class="tour-card__place">
-                          <svg width="9" height="12">
-                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
-                          </svg>
-                          Адыгея
-                        </span>
-                      </div>
-                      <span class="tour-card__days">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#sun"></use>
-                        </svg>
-                        7 дней</span>
-                      <span class="tour-card__nights">
-                        <svg width="20" height="20" fill="#ffffff">
-                          <use xlink:href="./img/sprite.svg#moon"></use>
-                        </svg>
-                        6 ночей</span>
-                    </div>
-                    <h3 class="tour-card__tour-name">Через Фишт к&nbsp;Черному морю</h3>
-                    <div class="tour-card__second-wrapper">
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Сложность:</span>
-                        <span class="tour-card__description-value">
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star-filled"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                          <svg width="15" height="14">
-                            <use xlink:href="./img/sprite.svg#star"></use>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Даты набора:</span>
-                        <span class="tour-card__description-value">15.07-19.07</span>
-                      </div>
-                      <div class="tour-card__description-wrapper">
-                        <span class="tour-card__description-name">Группа:</span>
-                        <span class="tour-card__description-value">до 22 чел.</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <a class="nearest-tours__link arrowed" href="#">Показать все туры
-              <svg width="10" height="14" stroke="#2D383F">
-                <use xlink:href="./img/sprite.svg#text-arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </section>
 
-        <section class="training" id="training">
-          <div class="training__container">
-
-            <div class="training__title title-block">
-              <h2 class="title-block__title">Обучение</h2>
-              <span class="title-block__title-shadow">Обучение</span>
-            </div>
-
-            <p class="training__description">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
-
-            <div class="training__slider-container">
-              <span class="training__slider-name">Наши инструкторы</span>
-              <div class="training__buttons-wrapper slider-buttons">
-                <div class="training__button-prev slider-buttons__prev swiper-button-prev">
-                  <svg width="14" height="9" fill="#ffffff">
-                    <use xlink:href="./img/sprite.svg#arrow-left"></use>
-                  </svg>
-                </div>
-                <div class="training__button-next slider-buttons__next swiper-button-next">
-                  <svg width="14" height="9" fill="#ffffff">
-                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </div>
+            <div class="hero__swiper hero__swiper--content swiper">
+              <div class="hero__pagination-wrapper">
+                <div class="hero__pagination swiper-pagination"></div>
               </div>
+              <div class="swiper-wrapper">
 
-              <div class="training__swiper swiper">
-                <div class="swiper-wrapper">
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-ap-m.webp 1x, ./img/coaches/photo-ap-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-ap-t.webp 1x, ./img/coaches/photo-ap-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-ap-d.webp 1x, ./img/coaches/photo-ap-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-ap-m.jpg 1x, ./img/coaches/photo-ap-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-ap-t.jpg 1x, ./img/coaches/photo-ap-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-ap-d.jpg" srcset="./img/coaches/photo-ap-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Александр Прокофьев</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
+                <div class="swiper-slide hero__slide">
+                  <p class="hero__title">Программы стажировок в&nbsp;крупнейших компаниях Израиля</p>
+                  <div class="hero__text-wrapper">
+                    <p class="hero__text">Получите незаменимый опыт работы в&nbsp;ведущих израильских компаниях и&nbsp;государственных организациях.</p>
+                    <div>
+                      <div class="hero__button-wrapper">
+                        <a class="hero__button button" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <div class="button__icon-wrapper">
+                            <svg width="10" height="10" stroke="#ffffff">
+                              <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </div>
                         </a>
                       </div>
                     </div>
-                    <p class="trainer-card__about">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                   </div>
+                </div>
 
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-sa-m.webp 1x, ./img/coaches/photo-sa-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-sa-t.webp 1x, ./img/coaches/photo-sa-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-sa-d.webp 1x, ./img/coaches/photo-sa-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-sa-m.jpg 1x, ./img/coaches/photo-sa-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-sa-t.jpg 1x, ./img/coaches/photo-sa-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-sa-d.jpg" srcset="./img/coaches/photo-sa-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Светлана Афиногенова</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
+                <div class="swiper-slide hero__slide">
+                  <p class="hero__title">Волонтёрские программы&nbsp;&mdash; внесите свой вклад в&nbsp;общество</p>
+                  <div class="hero__text-wrapper">
+                    <p class="hero__text">Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.</p>
+                    <div>
+                      <div class="hero__button-wrapper">
+                        <a class="hero__button button" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <div class="button__icon-wrapper">
+                            <svg width="10" height="10" stroke="#ffffff">
+                              <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </div>
                         </a>
                       </div>
                     </div>
-                    <p class="trainer-card__about">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                   </div>
+                </div>
 
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-nk-m.webp 1x, ./img/coaches/photo-nk-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-nk-t.webp 1x, ./img/coaches/photo-nk-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-nk-d.webp 1x, ./img/coaches/photo-nk-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-nk-m.jpg 1x, ./img/coaches/photo-nk-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-nk-t.jpg 1x, ./img/coaches/photo-nk-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-nk-d.jpg" srcset="./img/coaches/photo-nk-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Надежда Колесниченко</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
+                <div class="swiper-slide hero__slide">
+                  <p class="hero__title">Глобальный профессиональный опыт обучения за&nbsp;рубежом</p>
+                  <div class="hero__text-wrapper">
+                    <p class="hero__text">Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль жизни!</p>
+                    <div>
+                      <div class="hero__button-wrapper">
+                        <a class="hero__button button" href="#">
+                          <span class="button__text">Подробнее</span>
+                          <div class="button__icon-wrapper">
+                            <svg width="10" height="10" stroke="#ffffff">
+                              <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </div>
                         </a>
                       </div>
                     </div>
-                    <p class="trainer-card__about">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                   </div>
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-fk-m.webp 1x, ./img/coaches/photo-fk-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-fk-t.webp 1x, ./img/coaches/photo-fk-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-fk-d.webp 1x, ./img/coaches/photo-fk-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-fk-m.jpg 1x, ./img/coaches/photo-fk-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-fk-t.jpg 1x, ./img/coaches/photo-fk-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-fk-d.jpg" srcset="./img/coaches/photo-fk-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Федор Кайгородов</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="trainer-card__about">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
-                  </div>
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-ap-m.webp 1x, ./img/coaches/photo-ap-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-ap-t.webp 1x, ./img/coaches/photo-ap-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-ap-d.webp 1x, ./img/coaches/photo-ap-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-ap-m.jpg 1x, ./img/coaches/photo-ap-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-ap-t.jpg 1x, ./img/coaches/photo-ap-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-ap-d.jpg" srcset="./img/coaches/photo-ap-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Александр Прокофьев</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="trainer-card__about">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
-                  </div>
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-sa-m.webp 1x, ./img/coaches/photo-sa-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-sa-t.webp 1x, ./img/coaches/photo-sa-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-sa-d.webp 1x, ./img/coaches/photo-sa-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-sa-m.jpg 1x, ./img/coaches/photo-sa-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-sa-t.jpg 1x, ./img/coaches/photo-sa-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-sa-d.jpg" srcset="./img/coaches/photo-sa-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Светлана Афиногенова</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="trainer-card__about">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
-                  </div>
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-nk-m.webp 1x, ./img/coaches/photo-nk-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-nk-t.webp 1x, ./img/coaches/photo-nk-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-nk-d.webp 1x, ./img/coaches/photo-nk-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-nk-m.jpg 1x, ./img/coaches/photo-nk-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-nk-t.jpg 1x, ./img/coaches/photo-nk-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-nk-d.jpg" srcset="./img/coaches/photo-nk-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Надежда Колесниченко</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="trainer-card__about">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
-                  </div>
-
-                  <div class="training__slide trainer-card swiper-slide">
-                    <div class="trainer-card__photo">
-                      <picture>
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-fk-m.webp 1x, ./img/coaches/photo-fk-m@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-fk-t.webp 1x, ./img/coaches/photo-fk-t@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/coaches/photo-fk-d.webp 1x, ./img/coaches/photo-fk-d@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="250" height="212" srcset="./img/coaches/photo-fk-m.jpg 1x, ./img/coaches/photo-fk-m@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="176" height="212" srcset="./img/coaches/photo-fk-t.jpg 1x, ./img/coaches/photo-fk-t@2x.jpg 2x">
-                        <img width="238" height="212" alt="Фото тренера." src="./img/coaches/photo-fk-d.jpg" srcset="./img/coaches/photo-fk-d@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="trainer-card__wrapper">
-                      <h3 class="trainer-card__name">Федор Кайгородов</h3>
-                      <div class="trainer-card__vk">
-                        <a class="trainer-card__social-link" href="#" aria-label="Перейти на страницу тренера в VK.">
-                          <svg width="16" height="9" fill="#2D383F">
-                            <use xlink:href="./img/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="trainer-card__about">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
-                  </div>
+                </div>
 
                 </div>
               </div>
-            </div>
-
-            <span class="training__learning-title">Процесс обучения</span>
-            <ul class="training__learning-list">
-              <li class="training__learning-item">
-                <svg width="23" height="23" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#map"></use>
-                </svg>
-                <span>Изучение спортивного туристского движения</span>
-              </li>
-              <li class="training__learning-item">
-                <svg width="23" height="23" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#boot"></use>
-                </svg>
-                <span>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</span>
-                </li>
-              <li class="training__learning-item training__learning-item--top-mark training__learning-item--re-order">
-                <svg width="23" height="23" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#trees"></use>
-                </svg>
-                <span>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</span>
-                </li>
-              <li class="training__learning-item training__learning-item--top-mark">
-                <svg width="23" height="23" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#mountain"></use>
-                </svg>
-                <span>Разъяснение сложности горных препятствий</span>
-                </li>
-            </ul>
 
           </div>
         </section>
 
         <section class="about" id="about">
-
-          <div class="about__bg about__bg--left">
-            <picture>
-              <source srcset="./img/about/bg.webp 1x, ./img/about/bg@2x.webp 2x" type="image/webp">
-              <img width="808" height="474" alt="#" src="./img/about/bg.png" srcset="./img/about/bg@2x.png 2x" aria-hidden="true">
-            </picture>
+          <div class="about__container container">
+            <div class="about__first-wrapper">
+              <div class="about__short-info">
+                <h2  class="about__info-title title">О&nbsp;проекте &laquo;Маса&raquo;</h2>
+                <p  class="about__info-text">&laquo;Маса&raquo;&nbsp;&mdash; совместный проект правительства Израиля и&nbsp;Еврейского агентства Сохнут.</p>
+              </div>
+              <div  class="about__our-goal">
+                <p class="about__goal-title">Наша цель</p>
+                <p class="about__goal-text">Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются Израиль и&nbsp;еврейские общины во&nbsp;всем мире. Цель центра&nbsp;&mdash; наделить этих людей способностью инициировать значимые изменения.</p>
+                <button class="about__button button" type="button" aria-label="Закрыть всплывающее меню." data-open-modal="feedback">
+                  <span class="button__text">Подробнее о проекте</span>
+                  <span class="button__icon-wrapper">
+                    <svg width="10" height="10" stroke="#ffffff">
+                      <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="about__second-wrapper">
+              <ul class="about__list">
+                <li class="about__item">
+                  <p class="about__item-title">Более 250 программ</p>
+                  <p class="about__item-text">учебных и&nbsp;рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года
+                  </p>
+                </li>
+                <li class="about__item">
+                  <p class="about__item-title">Более 3000 участников</p>
+                  <p class="about__item-text">уже успешно прошли программу от&nbsp;&laquo;Маса&raquo; и&nbsp;остались в&nbsp;Израиле
+                  </p>
+                </li>
+                <li class="about__item">
+                  <p class="about__item-title">От&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</p>
+                  <p class="about__item-text">грант всем участникам для комфортного прохождения программы</p>
+                </li>
+                <li class="about__item">
+                  <p class="about__item-title">Участники из&nbsp;60&nbsp;стран</p>
+                  <p class="about__item-text">студенты со&nbsp;всего мира приезжают на&nbsp;программу &laquo;Маса&raquo;</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="about__bg about__bg--right">
-            <picture>
-              <source srcset="./img/about/clouds.webp 1x, ./img/about/clouds@2x.webp 2x" type="image/webp">
-              <img width="618" height="280" alt="#" src="./img/about/clouds.png" srcset="./img/about/clouds@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
+        </section>
 
-          <div class="about__container">
-            <div class="about__wrapper">
-              <div class="about__title title-block">
-                <h2 class="title-block__title">О нас</h2>
-                <span class="title-block__title-shadow">О нас</span>
+        <section class="programs" id="programs">
+          <div class="programs__container container">
+            <h2 class="programs__title title">Программы</h2>
+            <a class="programs__button button" href="#">
+              <span class="button__text">Все программы</span>
+              <div class="button__icon-wrapper">
+                <svg width="10" height="10" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+            <div class="programs__swiper swiper">
+              <div class="programs__swiper-wrapper swiper-wrapper">
+
+                <div class="programs__slide programs-card swiper-slide">
+                  <div class="programs-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-1-m.webp 1x, ./img/programs/bg-1-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-1-t.webp 1x, ./img/programs/bg-1-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/programs/bg-1-d.webp 1x, ./img/programs/bg-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-1-m.jpg 1x, ./img/programs/bg-1-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-1-t.jpg 1x, ./img/programs/bg-1-t@2x.jpg 2x">
+                      <img width="392" height="420" alt="#" src="./img/programs/bg-1-d.jpg" srcset="./img/programs/bg-1-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="programs-card__content">
+                    <div class="programs-card__content-wrapper">
+                      <p class="programs-card__title">Стажировки</p>
+                      <div class="programs-card__text-wrapper">
+                        <p class="programs-card__text">Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                        <a class="programs-card__link link-icon" href="#" aria-label="Перейти к программе.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="programs__slide programs-card swiper-slide">
+                  <div class="programs-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-2-m.webp 1x, ./img/programs/bg-2-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-2-t.webp 1x, ./img/programs/bg-2-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/programs/bg-2-d.webp 1x, ./img/programs/bg-2-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-2-m.jpg 1x, ./img/programs/bg-2-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-2-t.jpg 1x, ./img/programs/bg-2-t@2x.jpg 2x">
+                      <img width="392" height="420" alt="#" src="./img/programs/bg-2-d.jpg" srcset="./img/programs/bg-2-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="programs-card__content">
+                    <div class="programs-card__content-wrapper">
+                      <p class="programs-card__title">Волонтёрство</p>
+                      <div class="programs-card__text-wrapper">
+                        <p class="programs-card__text">Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                        <a class="programs-card__link link-icon" href="#" aria-label="Перейти к программе.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="programs__slide programs-card swiper-slide">
+                  <div class="programs-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-3-m.webp 1x, ./img/programs/bg-3-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-3-t.webp 1x, ./img/programs/bg-3-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/programs/bg-3-d.webp 1x, ./img/programs/bg-3-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-3-m.jpg 1x, ./img/programs/bg-3-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-3-t.jpg 1x, ./img/programs/bg-3-t@2x.jpg 2x">
+                      <img width="392" height="420" alt="#" src="./img/programs/bg-3-d.jpg" srcset="./img/programs/bg-3-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="programs-card__content">
+                    <div class="programs-card__content-wrapper">
+                      <p class="programs-card__title">Учёба</p>
+                      <div class="programs-card__text-wrapper">
+                        <p class="programs-card__text">Получите образование и&nbsp;измените свое будущее.</p>
+                        <a class="programs-card__link link-icon" href="#" aria-label="Перейти к программе.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="programs__slide programs-card swiper-slide">
+                  <div class="programs-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-1-m.webp 1x, ./img/programs/bg-1-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-1-t.webp 1x, ./img/programs/bg-1-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/programs/bg-1-d.webp 1x, ./img/programs/bg-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/bg-1-m.jpg 1x, ./img/programs/bg-1-m@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="420" srcset="./img/programs/bg-1-t.jpg 1x, ./img/programs/bg-1-t@2x.jpg 2x">
+                      <img width="392" height="420" alt="#" src="./img/programs/bg-1-d.jpg" srcset="./img/programs/bg-1-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="programs-card__content">
+                    <div class="programs-card__content-wrapper">
+                      <p class="programs-card__title">Стажировки</p>
+                      <div class="programs-card__text-wrapper">
+                        <p class="programs-card__text">Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                        <a class="programs-card__link link-icon" href="#" aria-label="Перейти к программе.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
-              <p class="about__text-header">История компании</p>
-              <p class="about__text-content">В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы,
-                поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005
-                году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
-              <p class="about__text-header about__text-header--more">Наша цель</p>
-              <p class="about__text-content">Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем
-                на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам
-                останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
             </div>
+            <div class="programs__control-wrapper">
+              <div class="programs__scrollbar swiper-scrollbar"></div>
+              <div class="programs__nav-buttons-wrapper">
+                <div class="programs__button-prev nav-arrow nav-arrow--prev swiper-button-prev">
+                  <svg width="10" height="10" stroke="#316dc2">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+                <div class="programs__button-next nav-arrow nav-arrow--next swiper-button-next">
+                  <svg width="10" height="10" stroke="#316dc2">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="how-to-go" id="how-to-go">
+          <div class="how-to-go__container container">
+            <div class="how-to-go__short-info">
+              <h2 class="how-to-go__title title title--light">Как поехать</h2>
+              <p class="how-to-go__text">Свяжитесь с&nbsp;координатором, чтобы узнать полную информацию. Вы&nbsp;получите актуальные сведения о&nbsp;доступных программах и&nbsp;городах, в&nbsp;которых можете пройти программу.</p>
+              <div class="how-to-go__image-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" width="290" height="200" srcset="./img/how-to-go/img-m.webp 1x, ./img/how-to-go/img-m@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1199px)" width="678" height="375" srcset="./img/how-to-go/img-t.webp 1x, ./img/how-to-go/img-t@2x.webp 2x" type="image/webp">
+                  <source srcset="./img/how-to-go/img-d.webp 1x, ./img/how-to-go/img-d@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" width="290" height="200" srcset="./img/how-to-go/img-m.jpg 1x, ./img/how-to-go/img-m@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" width="678" height="375" srcset="./img/how-to-go/img-t.jpg 1x, ./img/how-to-go/img-t@2x.jpg 2x">
+                  <img width="498" height="363" alt="#" src="./img/how-to-go/img-d.jpg" srcset="./img/how-to-go/img-d@2x.jpg 2x" aria-hidden="true">
+                </picture>
+              </div>
+            </div>
+            <div class="how-to-go__grant-info">
+              <p class="how-to-go__description">Чтобы получить грант на&nbsp;обучение, вам нужно:</p>
+              <ul class="how-to-go__list">
+                <li class="how-to-go__item">Быть в&nbsp;возрасте от&nbsp;16&nbsp;до&nbsp;30&nbsp;лет</li>
+                <li class="how-to-go__item">Иметь оконченное среднее образование</li>
+                <li class="how-to-go__item">Иметь документально подтверждённые еврейские корни и&nbsp;пройти консульскую проверку</li>
+                <li class="how-to-go__item">За&nbsp;последние 2&nbsp;года быть не&nbsp;больше 3х&nbsp;месяцев подряд непрерывно в&nbsp;Израиле</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="news" id="news">
+          <div class="news__container container">
+            <h2 class="news__title title">Новости и&nbsp;материалы</h2>
+            <ul class="news__tab-list">
+              <li class="news__tab-item is-active" data-category="all">Общее</li>
+              <li class="news__tab-item" data-category="volunteering">Волонтёрство</li>
+              <li class="news__tab-item" data-category="internships">Стажировки</li>
+              <li class="news__tab-item" data-category="career">Карьера</li>
+              <li class="news__tab-item" data-category="travels">Путешествия</li>
+            </ul>
+            <div class="news__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="news-card news-card--mobile-big swiper-slide" data-category="internships">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-1-tm.webp 1x, ./img/news/img-1-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-1-tm.webp 1x, ./img/news/img-1-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-1-d.webp 1x, ./img/news/img-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-1-tm.jpg 1x, ./img/news/img-1-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-1-tm.jpg 1x, ./img/news/img-1-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-1-d.jpg" srcset="./img/news/img-1-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">23/03/2023</span>
+                      <p class="news-card__title">Интервью с&nbsp;участницей программы стажировки</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card news-card--mobile-big swiper-slide" data-category="travels">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-2-tm.webp 1x, ./img/news/img-2-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-2-tm.webp 1x, ./img/news/img-2-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-2-d.webp 1x, ./img/news/img-2-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-2-tm.jpg 1x, ./img/news/img-2-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-2-tm.jpg 1x, ./img/news/img-2-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-2-d.jpg" srcset="./img/news/img-2-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">20/03/2023</span>
+                      <p class="news-card__title">Путешествуем по&nbsp;Израилю</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Какие места посещают наши студенты весной</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card news-card--mobile-big swiper-slide" data-category="volunteering">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-3-tm.webp 1x, ./img/news/img-3-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-3-tm.webp 1x, ./img/news/img-3-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-3-d.webp 1x, ./img/news/img-3-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-3-tm.jpg 1x, ./img/news/img-3-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-3-tm.jpg 1x, ./img/news/img-3-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-3-d.jpg" srcset="./img/news/img-3-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">17/03/2023</span>
+                      <p class="news-card__title">Новая программа волонтёрства</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Программа помощи детям длительностью 4&nbsp;месяца</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card swiper-slide" data-category="career">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-4-tm.webp 1x, ./img/news/img-4-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-4-tm.webp 1x, ./img/news/img-4-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-4-d.webp 1x, ./img/news/img-4-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-4-tm.jpg 1x, ./img/news/img-4-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-4-tm.jpg 1x, ./img/news/img-4-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-4-d.jpg" srcset="./img/news/img-4-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">10/03/2023</span>
+                      <p class="news-card__title">Построй свою карьеру</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card swiper-slide" data-category="internships">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-1-tm.webp 1x, ./img/news/img-1-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-1-tm.webp 1x, ./img/news/img-1-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-1-d.webp 1x, ./img/news/img-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-1-tm.jpg 1x, ./img/news/img-1-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-1-tm.jpg 1x, ./img/news/img-1-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-1-d.jpg" srcset="./img/news/img-1-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">23/03/2023</span>
+                      <p class="news-card__title">Интервью с&nbsp;участницей программы стажировки</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card swiper-slide" data-category="travels">
+                  <div class="news-card__bg">
+                    <picture>
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-2-tm.webp 1x, ./img/news/img-2-tm@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-2-tm.webp 1x, ./img/news/img-2-tm@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/news/img-2-d.webp 1x, ./img/news/img-2-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px)" width="290" height="330" srcset="./img/news/img-2-tm.jpg 1x, ./img/news/img-2-tm@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" width="324" height="350" srcset="./img/news/img-2-tm.jpg 1x, ./img/news/img-2-tm@2x.jpg 2x">
+                      <img width="286" height="400" alt="#" src="./img/news/img-2-d.jpg" srcset="./img/news/img-2-d@2x.jpg 2x" aria-hidden="true">
+                    </picture>
+                  </div>
+                  <div class="news-card__content">
+                    <div class="news-card__content-wrapper">
+                      <span class="news-card__date">20/03/2023</span>
+                      <p class="news-card__title">Путешествуем по&nbsp;Израилю</p>
+                      <div class="news-card__text-wrapper">
+                        <p class="news-card__text">Какие места посещают наши студенты весной</p>
+                        <a class="news-card__link link-icon" href="#" aria-label="Перейти к новости.">
+                          <svg width="10" height="10" stroke="#ffffff">
+                            <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__control-wrapper">
+              <div class="news__button-prev nav-arrow nav-arrow--prev swiper-button-prev">
+                <svg width="10" height="10" stroke="#316dc2">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+              <div class="news__pagination swiper-pagination"></div>
+              <div class="news__button-next nav-arrow nav-arrow--next swiper-button-next">
+                <svg width="10" height="10" stroke="#316dc2">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq" id="faq">
+          <div class="faq__container container">
+            <h2 class="faq__title title">Вопросы и&nbsp;ответы</h2>
+            <ul class="faq__accordion-list" data-accordion="parent">
+              <li class="faq__accordion-item" data-accordion="element">
+                <div class="faq__item-wrapper" data-accordion="button" tabindex="1">
+                  <div class="faq__title__wrapper">
+                    <h3 class="faq__item-title">Кто организатор? Какие сроки у&nbsp;программы?</h3>
+                    <button class="faq__item-button" tabindex="-1" aria-label="Открыть вкладку.">
+                      <span class="faq__item-button-plus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </span>
+                      <span class="faq__item-button-minus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="faq__item-content" data-accordion="content">
+                    <p class="faq__item-text">Организатором программы является проект &laquo;Маса&raquo; в&nbsp;сотрудничестве
+                      с&nbsp;образовательными учреждениями. Сроки программы обмена могут варьироваться от&nbsp;одного семестра
+                      до&nbsp;года.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="faq__accordion-item" data-accordion="element">
+                <div class="faq__item-wrapper" data-accordion="button" tabindex="1">
+                  <div class="faq__title__wrapper">
+                    <h3 class="faq__item-title">Что такое грант на&nbsp;обучение?</h3>
+                    <button class="faq__item-button" tabindex="-1" aria-label="Открыть вкладку.">
+                      <span class="faq__item-button-plus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </span>
+                      <span class="faq__item-button-minus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="faq__item-content" data-accordion="content">
+                    <p class="faq__item-text">Грант на&nbsp;обучение&nbsp;&mdash; это финансовая поддержка, которую предоставляет
+                      организатор программы обмена студентами для оплаты учебных расходов.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="faq__accordion-item" data-accordion="element">
+                <div class="faq__item-wrapper" data-accordion="button" tabindex="1">
+                  <div class="faq__title__wrapper">
+                    <h3 class="faq__item-title">Как определяется стоимость программы?</h3>
+                    <button class="faq__item-button" tabindex="-1" aria-label="Открыть вкладку.">
+                      <span class="faq__item-button-plus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </span>
+                      <span class="faq__item-button-minus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="faq__item-content" data-accordion="content">
+                    <p class="faq__item-text">Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления.
+                      В&nbsp;большинстве случаев грант &laquo;Маса&raquo; не&nbsp;покрывает полную стоимость программы, и&nbsp;поэтому
+                      предусматривается определённая доля личного участия.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="faq__accordion-item" data-accordion="element">
+                <div class="faq__item-wrapper" data-accordion="button" tabindex="1">
+                  <div class="faq__title__wrapper">
+                    <h3 class="faq__item-title">Признаётся&nbsp;ли учеба в&nbsp;рамках проекта для дальнейшего обучения?</h3>
+                    <button class="faq__item-button" tabindex="-1" aria-label="Открыть вкладку.">
+                      <span class="faq__item-button-plus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </span>
+                      <span class="faq__item-button-minus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="faq__item-content" data-accordion="content">
+                    <p class="faq__item-text">Студенты, участвующие в&nbsp;проекте, могут использовать полученные знания и&nbsp;навыки
+                      в&nbsp;своей будущей профессиональной деятельности или продолжить обучение в&nbsp;высших учебных заведениях. Кроме
+                      того, многие университеты и&nbsp;колледжи предоставляют кредиты за&nbsp;участие в&nbsp;программе обмена
+                      студентами.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="faq__accordion-item" data-accordion="element">
+                <div class="faq__item-wrapper" data-accordion="button" tabindex="1">
+                  <div class="faq__title__wrapper">
+                    <h3 class="faq__item-title">Как выглядит полный процесс регистрации на&nbsp;программу &laquo;Маса&raquo;?</h3>
+                    <button class="faq__item-button" tabindex="-1" aria-label="Открыть вкладку.">
+                      <span class="faq__item-button-plus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                        </svg>
+                      </span>
+                      <span class="faq__item-button-minus">
+                        <svg width="18" height="18" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="faq__item-content" data-accordion="content">
+                    <p class="faq__item-text">Процесс регистрации на программу обмена включает выбор университета-партнера и программы
+                      обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов,
+                      прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание
+                      договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section class="reviews" id="reviews">
-          <div class="reviews__container">
-
-            <div class="reviews__title title-block">
-              <h2 class="title-block__title">Отзывы</h2>
-              <span class="title-block__title-shadow">Отзывы</span>
-            </div>
-
-            <div class="reviews__buttons-wrapper slider-buttons">
-              <div class="reviews__button-prev slider-buttons__prev swiper-button-prev">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </div>
-              <div class="reviews__button-next slider-buttons__next swiper-button-next">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </div>
-            </div>
-
+          <div class="reviews__container container">
+            <h2 class="reviews__title title">Отзывы</h2>
             <div class="reviews__swiper swiper">
-              <div class="swiper-wrapper">
+              <div class="reviews__swiper-wrapper swiper-wrapper">
 
-                <div class="reviews__slide review-card swiper-slide">
-                  <div class="review-card__photo">
-                    <picture>
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-1-m.webp 1x, ./img/review/review-1-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-1-t.webp 1x, ./img/review/review-1-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/review/review-1-d.webp 1x, ./img/review/review-1-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-1-m.jpg 1x, ./img/review/review-1-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-1-t.jpg 1x, ./img/review/review-1-t@2x.jpg 2x">
-                      <img width="258" height="253" alt="Фото участника." src="./img/review/review-1-d.jpg" srcset="./img/review/review-1-d@2x.jpg 2x">
-                    </picture>
+                <div class="reviews__slide reviews-card swiper-slide">
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__user">
+                      <div class="reviews-card__avatar">
+                        <picture>
+                          <source srcset="./img/reviews/avatar-1.webp 1x, ./img/reviews/avatar-1@2x.webp 2x" type="image/webp">
+                          <img width="90" height="90" alt="Аватар пользователя." src="./img/reviews/avatar-1.png"
+                            srcset="./img/reviews/avatar-1@2x.png 2x">
+                        </picture>
+                      </div>
+                      <span class="reviews-card__user-name">Сара<br>Аврахам</span>
+                    </div>
+                    <div class="reviews-card__info-wrapper">
+                      <div class="reviews-card__program-wrapper">
+                        <span class="reviews-card__program">Программа</span>
+                        <span class="reviews-card__program-value">Masa Art Challenge</span>
+                      </div>
+                      <div class="reviews-card__date-wrapper">
+                        <span class="reviews-card__date">Дата</span>
+                        <span class="reviews-card__date-value">Осень 2022</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="review-card__text-wrapper">
-                    <p class="review-card__review-text">Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash; всему научили, все показали. Делились увлекательными историями о&nbsp;местах, людях, культуре места.</p>
-                    <p class="review-card__review-text review-card__review-text--more">С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
-                    <h3 class="review-card__author-name">Фролов Александр</h3>
-                    <span class="review-card__author-info">38 лет, Москва</span>
-                  </div>
+                  <p class="reviews-card__text reviews-card__text--main">Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один
+                    из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
+                  <p class="reviews-card__text">Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим
+                    получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
+                    её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне
+                    возможность.</p>
                 </div>
 
-                <div class="reviews__slide review-card swiper-slide">
-                  <div class="review-card__photo">
-                    <picture>
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-2-m.webp 1x, ./img/review/review-2-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-2-t.webp 1x, ./img/review/review-2-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/review/review-2-d.webp 1x, ./img/review/review-2-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-2-m.jpg 1x, ./img/review/review-2-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-2-t.jpg 1x, ./img/review/review-2-t@2x.jpg 2x">
-                      <img width="258" height="253" alt="Фото участника." src="./img/review/review-2-d.jpg" srcset="./img/review/review-2-d@2x.jpg 2x">
-                    </picture>
+                <div class="reviews__slide reviews-card swiper-slide">
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__user">
+                      <div class="reviews-card__avatar">
+                        <picture>
+                          <source srcset="./img/reviews/avatar-2.webp 1x, ./img/reviews/avatar-2@2x.webp 2x" type="image/webp">
+                          <img width="90" height="90" alt="Аватар пользователя." src="./img/reviews/avatar-2.png"
+                            srcset="./img/reviews/avatar-2@2x.png 2x">
+                        </picture>
+                      </div>
+                      <span class="reviews-card__user-name">Давид<br>Иммервар</span>
+                    </div>
+                    <div class="reviews-card__info-wrapper">
+                      <div class="reviews-card__program-wrapper">
+                        <span class="reviews-card__program">Программа</span>
+                        <span class="reviews-card__program-value">Volunteer Chance</span>
+                      </div>
+                      <div class="reviews-card__date-wrapper">
+                        <span class="reviews-card__date">Дата</span>
+                        <span class="reviews-card__date-value">Лето 2022</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="review-card__text-wrapper">
-                    <p class="review-card__review-text">Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идет по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века. Было очень интересно!</p>
-                    <p class="review-card__review-text review-card__review-text--more">Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам. Всем советую этот тур.</p>
-                    <h3 class="review-card__author-name">Иван Соловьев</h3>
-                    <span class="review-card__author-info">25 лет, Владивосток</span>
-                  </div>
+                  <p class="reviews-card__text reviews-card__text--main">Благодаря опыту стажировки я&nbsp;узнал так много нового
+                    о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
+                  <p class="reviews-card__text">Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей.
+                    Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт.
+                    Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
                 </div>
 
-                <div class="reviews__slide review-card swiper-slide">
-                  <div class="review-card__photo">
-                    <picture>
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-3-m.webp 1x, ./img/review/review-3-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-3-t.webp 1x, ./img/review/review-3-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/review/review-3-d.webp 1x, ./img/review/review-3-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-3-m.jpg 1x, ./img/review/review-3-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-3-t.jpg 1x, ./img/review/review-3-t@2x.jpg 2x">
-                      <img width="258" height="253" alt="Фото участника." src="./img/review/review-3-d.jpg" srcset="./img/review/review-3-d@2x.jpg 2x">
-                    </picture>
+                <div class="reviews__slide reviews-card swiper-slide">
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__user">
+                      <div class="reviews-card__avatar">
+                        <picture>
+                          <source srcset="./img/reviews/avatar-1.webp 1x, ./img/reviews/avatar-1@2x.webp 2x" type="image/webp">
+                          <img width="90" height="90" alt="Аватар пользователя." src="./img/reviews/avatar-1.png"
+                            srcset="./img/reviews/avatar-1@2x.png 2x">
+                        </picture>
+                      </div>
+                      <span class="reviews-card__user-name">Сара<br>Аврахам</span>
+                    </div>
+                    <div class="reviews-card__info-wrapper">
+                      <div class="reviews-card__program-wrapper">
+                        <span class="reviews-card__program">Программа</span>
+                        <span class="reviews-card__program-value">Masa Art Challenge</span>
+                      </div>
+                      <div class="reviews-card__date-wrapper">
+                        <span class="reviews-card__date">Дата</span>
+                        <span class="reviews-card__date-value">Осень 2022</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="review-card__text-wrapper">
-                    <p class="review-card__review-text">Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем ожидала, видимо организм уже привык.</p>
-                    <p class="review-card__review-text review-card__review-text--more">Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку! Я&nbsp;была рада быть в&nbsp;такой компании.</p>
-                    <h3 class="review-card__author-name">Евгения Баженова</h3>
-                    <span class="review-card__author-info">23 года, Кострома</span>
-                  </div>
+                  <p class="reviews-card__text reviews-card__text--main">Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один
+                    из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
+                  <p class="reviews-card__text">Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим
+                    получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
+                    её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне
+                    возможность.</p>
                 </div>
 
-                <div class="reviews__slide review-card swiper-slide">
-                  <div class="review-card__photo">
-                    <picture>
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-4-m.webp 1x, ./img/review/review-4-m@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-4-t.webp 1x, ./img/review/review-4-t@2x.webp 2x" type="image/webp">
-                      <source srcset="./img/review/review-4-d.webp 1x, ./img/review/review-4-d@2x.webp 2x" type="image/webp">
-                      <source media="(max-width: 767px)" width="250" height="169" srcset="./img/review/review-4-m.jpg 1x, ./img/review/review-4-m@2x.jpg 2x">
-                      <source media="(max-width: 1199px)" width="186" height="237" srcset="./img/review/review-4-t.jpg 1x, ./img/review/review-4-t@2x.jpg 2x">
-                      <img width="258" height="253" alt="Фото участника." src="./img/review/review-4-d.jpg" srcset="./img/review/review-4-d@2x.jpg 2x">
-                    </picture>
+                <div class="reviews__slide reviews-card swiper-slide">
+                  <div class="reviews-card__profile">
+                    <div class="reviews-card__user">
+                      <div class="reviews-card__avatar">
+                        <picture>
+                          <source srcset="./img/reviews/avatar-2.webp 1x, ./img/reviews/avatar-2@2x.webp 2x" type="image/webp">
+                          <img width="90" height="90" alt="Аватар пользователя." src="./img/reviews/avatar-2.png"
+                            srcset="./img/reviews/avatar-2@2x.png 2x">
+                        </picture>
+                      </div>
+                      <span class="reviews-card__user-name">Давид<br>Иммервар</span>
+                    </div>
+                    <div class="reviews-card__info-wrapper">
+                      <div class="reviews-card__program-wrapper">
+                        <span class="reviews-card__program">Программа</span>
+                        <span class="reviews-card__program-value">Volunteer Chance</span>
+                      </div>
+                      <div class="reviews-card__date-wrapper">
+                        <span class="reviews-card__date">Дата</span>
+                        <span class="reviews-card__date-value">Лето 2022</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="review-card__text-wrapper">
-                    <p class="review-card__review-text">Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
-                    <p class="review-card__review-text review-card__review-text--more">У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
-                    <h3 class="review-card__author-name">Елена Пирогова</h3>
-                    <span class="review-card__author-info">37 лет, Тюмень</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="advantages" id="advantages">
-
-          <div class="advantages__bg advantages__bg--left">
-            <picture>
-              <source srcset="./img/advantages/clouds-left.webp 1x, ./img/advantages/clouds-left@2x.webp 2x" type="image/webp">
-              <img width="705" height="391" alt="#" src="./img/advantages/clouds-left.png" srcset="./img/advantages/clouds-left@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
-          <div class="advantages__bg advantages__bg--right">
-            <picture>
-              <source srcset="./img/advantages/clouds-right.webp 1x, ./img/advantages/clouds-right@2x.webp 2x" type="image/webp">
-              <img width="602" height="263" alt="#" src="./img/advantages/clouds-right.png" srcset="./img/advantages/clouds-right@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
-
-          <div class="advantages__container">
-
-            <div class="advantages__title title-block title-block--centred">
-              <h2 class="title-block__title">Преимущества</h2>
-              <span class="title-block__title-shadow">Преимущества</span>
-            </div>
-
-            <div class="advantages__swiper swiper">
-              <div class="advantages__swiper-wrapper swiper-wrapper">
-
-                <div class="advantages__slide advantage-card swiper-slide">
-                  <div class="advantage-card__image">
-                    <svg width="22" height="22">
-                      <use xlink:href="./img/sprite.svg#shield"></use>
-                    </svg>
-                  </div>
-                  <h3 class="advantage-card__title">Безопасность и&nbsp;охрана</h3>
-                  <p class="advantage-card__text">Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности. Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной безопасности во&nbsp;время всего тура.</p>
-                </div>
-
-                <div class="advantages__slide advantage-card swiper-slide">
-                  <div class="advantage-card__image">
-                    <svg width="22" height="22">
-                      <use xlink:href="./img/sprite.svg#crown"></use>
-                    </svg>
-                  </div>
-                  <h3 class="advantage-card__title">Экспертиза и&nbsp;знания</h3>
-                  <p class="advantage-card__text">Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
-                </div>
-
-                <div class="advantages__slide advantage-card swiper-slide">
-                  <div class="advantage-card__image">
-                    <svg width="22" height="22" fill="#0266c1">
-                      <use xlink:href="./img/sprite.svg#boot"></use>
-                    </svg>
-                  </div>
-                  <h3 class="advantage-card__title">Оборудование и&nbsp;снаряжение</h3>
-                  <p class="advantage-card__text">Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает путешествие более удобным и&nbsp;экономически выгодным.</p>
-                </div>
-
-                <div class="advantages__slide advantage-card swiper-slide">
-                  <div class="advantage-card__image">
-                    <svg width="22" height="22">
-                      <use xlink:href="./img/sprite.svg#path"></use>
-                    </svg>
-                  </div>
-                  <h3 class="advantage-card__title">Индивидуальные маршруты</h3>
-                  <p class="advantage-card__text">Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам. Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный опыт.</p>
-                </div>
-
-                <div class="advantages__slide advantage-card advantage-card--wide swiper-slide">
-                  <div class="advantage-card__image">
-                    <svg width="22" height="22">
-                      <use xlink:href="./img/sprite.svg#leaf"></use>
-                    </svg>
-                  </div>
-                  <h3 class="advantage-card__title">Бережное отношение к&nbsp;природе</h3>
-                  <p class="advantage-card__text">Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают минимальное воздействие на&nbsp;природную среду. Наша компания следует принципу &laquo;Не&nbsp;оставлять следов&raquo;.</p>
+                  <p class="reviews-card__text reviews-card__text--main">Благодаря опыту стажировки я&nbsp;узнал так много нового
+                    о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
+                  <p class="reviews-card__text">Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей.
+                    Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт.
+                    Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
                 </div>
 
               </div>
             </div>
 
-            <div class="advantages__buttons-wrapper slider-buttons">
-              <div class="advantages__button-prev slider-buttons__prev swiper-button-prev">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </div>
-              <div class="advantages__button-next slider-buttons__next swiper-button-next">
-                <svg width="14" height="9" fill="#ffffff">
-                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="photo-gallery" id="photo-gallery">
-          <div class="photo-gallery__container">
-
-            <div class="photo-gallery__title title-block">
-              <h2 class="title-block__title">Фотогалерея</h2>
-              <span class="title-block__title-shadow">Фотогалерея</span>
-            </div>
-
-            <div class="photo-gallery__slider-container">
-
-              <p class="photo-gallery__description">Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
-
-              <div class="photo-gallery__buttons-wrapper slider-buttons">
-                <div class="photo-gallery__button-prev slider-buttons__prev swiper-button-prev">
-                  <svg width="14" height="9" fill="#ffffff">
-                    <use xlink:href="./img/sprite.svg#arrow-left"></use>
+            <div class="reviews__control-wrapper">
+              <div class="reviews__scrollbar swiper-scrollbar"></div>
+              <div class="reviews__nav-buttons-wrapper">
+                <div class="reviews__button-prev nav-arrow nav-arrow--prev swiper-button-prev">
+                  <svg width="10" height="10" stroke="#316dc2">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <div class="photo-gallery__button-next slider-buttons__next swiper-button-next">
-                  <svg width="14" height="9" fill="#ffffff">
-                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                <div class="reviews__button-next nav-arrow nav-arrow--next swiper-button-next">
+                  <svg width="10" height="10" stroke="#316dc2">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
               </div>
-
-              <div class="photo-gallery__swiper swiper">
-                <div class="swiper-wrapper">
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-1.webp 1x, ./img/gallery/photo-1@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-1.webp 1x, ./img/gallery/photo-1@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-1.jpg 1x, ./img/gallery/photo-1@2x.jpg 2x">
-                        <img width="275" height="449" alt="Мужчина смотрит на горы." src="./img/gallery/photo-1.jpg" srcset="./img/gallery/photo-1@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide photo-gallery__slide--2-in-1 swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-2.webp 1x, ./img/gallery/photo-2@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-2.webp 1x, ./img/gallery/photo-2@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-2.jpg 1x, ./img/gallery/photo-2@2x.jpg 2x">
-                        <img width="298" height="179" alt="Компания у костра." src="./img/gallery/photo-2.jpg" srcset="./img/gallery/photo-2@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-3.webp 1x, ./img/gallery/photo-3@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-3.webp 1x, ./img/gallery/photo-3@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-3.jpg 1x, ./img/gallery/photo-3@2x.jpg 2x">
-                        <img width="298" height="265" alt="Компас в руке." src="./img/gallery/photo-3.jpg" srcset="./img/gallery/photo-3@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-4.webp 1x, ./img/gallery/photo-4@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-4.webp 1x, ./img/gallery/photo-4@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-4.jpg 1x, ./img/gallery/photo-4@2x.jpg 2x">
-                        <img width="275" height="449" alt="Совместный спуск с горы." src="./img/gallery/photo-4.jpg" srcset="./img/gallery/photo-4@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide photo-gallery__slide--2-in-1 swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-5.webp 1x, ./img/gallery/photo-5@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-5.webp 1x, ./img/gallery/photo-5@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-5.jpg 1x, ./img/gallery/photo-5@2x.jpg 2x">
-                        <img width="298" height="179" alt="Спуск с обледенелой горы." src="./img/gallery/photo-5.jpg" srcset="./img/gallery/photo-5@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-6.webp 1x, ./img/gallery/photo-6@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-6.webp 1x, ./img/gallery/photo-6@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-6.jpg 1x, ./img/gallery/photo-6@2x.jpg 2x">
-                        <img width="298" height="265" alt="Палатка в ночи." src="./img/gallery/photo-6.jpg" srcset="./img/gallery/photo-6@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-7.webp 1x, ./img/gallery/photo-7@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-7.webp 1x, ./img/gallery/photo-7@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-7.jpg 1x, ./img/gallery/photo-7@2x.jpg 2x">
-                        <img width="275" height="449" alt="Мужчина у костра." src="./img/gallery/photo-7.jpg" srcset="./img/gallery/photo-7@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-1.webp 1x, ./img/gallery/photo-1@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-1.webp 1x, ./img/gallery/photo-1@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-1.jpg 1x, ./img/gallery/photo-1@2x.jpg 2x">
-                        <img width="275" height="449" alt="Мужчина смотрит на горы." src="./img/gallery/photo-1.jpg" srcset="./img/gallery/photo-1@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide photo-gallery__slide--2-in-1 swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-2.webp 1x, ./img/gallery/photo-2@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-2.webp 1x, ./img/gallery/photo-2@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-2.jpg 1x, ./img/gallery/photo-2@2x.jpg 2x">
-                        <img width="298" height="179" alt="Компания у костра." src="./img/gallery/photo-2.jpg" srcset="./img/gallery/photo-2@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-3.webp 1x, ./img/gallery/photo-3@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-3.webp 1x, ./img/gallery/photo-3@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-3.jpg 1x, ./img/gallery/photo-3@2x.jpg 2x">
-                        <img width="298" height="265" alt="Компас в руке." src="./img/gallery/photo-3.jpg" srcset="./img/gallery/photo-3@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-4.webp 1x, ./img/gallery/photo-4@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-4.webp 1x, ./img/gallery/photo-4@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-4.jpg 1x, ./img/gallery/photo-4@2x.jpg 2x">
-                        <img width="275" height="449" alt="Совместный спуск с горы." src="./img/gallery/photo-4.jpg" srcset="./img/gallery/photo-4@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide photo-gallery__slide--2-in-1 swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-5.webp 1x, ./img/gallery/photo-5@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-5.webp 1x, ./img/gallery/photo-5@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="103" srcset="./img/gallery/photo-5.jpg 1x, ./img/gallery/photo-5@2x.jpg 2x">
-                        <img width="298" height="179" alt="Спуск с обледенелой горы." src="./img/gallery/photo-5.jpg" srcset="./img/gallery/photo-5@2x.jpg 2x">
-                      </picture>
-                    </div>
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-6.webp 1x, ./img/gallery/photo-6@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-6.webp 1x, ./img/gallery/photo-6@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="172" height="153" srcset="./img/gallery/photo-6.jpg 1x, ./img/gallery/photo-6@2x.jpg 2x">
-                        <img width="298" height="265" alt="Палатка в ночи." src="./img/gallery/photo-6.jpg" srcset="./img/gallery/photo-6@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="photo-gallery__slide swiper-slide">
-                    <div class="photo-gallery__slide-image">
-                      <picture>
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-7.webp 1x, ./img/gallery/photo-7@2x.webp 2x" type="image/webp">
-                        <source srcset="./img/gallery/photo-7.webp 1x, ./img/gallery/photo-7@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="159" height="259" srcset="./img/gallery/photo-7.jpg 1x, ./img/gallery/photo-7@2x.jpg 2x">
-                        <img width="275" height="449" alt="Мужчина у костра." src="./img/gallery/photo-7.jpg" srcset="./img/gallery/photo-7@2x.jpg 2x">
-                      </picture>
-                    </div>
-                  </div>
-
-              </div>
             </div>
 
-            </div>
-          </div>
-        </section>
-
-        <section class="questions" id="questions">
-          <h2 class="visually-hidden">Вопросы</h2>
-          <div class="questions__bg">
-            <picture>
-              <source media="(max-width: 767px)" width="320" height="621"
-                srcset="./img/form/form-bg-m.webp 1x, ./img/form/form-bg-m@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 1199px)" width="768" height="679"
-                srcset="./img/form/form-bg-t.webp 1x, ./img/form/form-bg-t@2x.webp 2x" type="image/webp">
-              <source srcset="./img/form/form-bg-d.webp 1x, ./img/form/form-bg-d@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 767px)" width="320" height="621"
-                srcset="./img/form/form-bg-m.png 1x, ./img/form/form-bg-m@2x.png 2x">
-              <source media="(max-width: 1199px)" width="768" height="679"
-                srcset="./img/form/form-bg-t.png 1x, ./img/form/form-bg-t@2x.png 2x">
-              <img width="1440" height="800" alt="#" src="./img/form/form-bg-d.png" srcset="./img/form/form-bg-d@2x.png 2x" aria-hidden="true">
-            </picture>
-          </div>
-          <div class="questions__container" data-form-validate data-callback="base">
-            <p class="questions__title">Остались вопросы?</p>
-            <p class="questions__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
-            <form class="questions__form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="questions__input-wrapper custom-input" data-validate-type="text" data-limitation="name" data-required>
-                <label aria-label="Введите имя.">
-                  <input type="text" name="customer-name" placeholder="Как к вам обращаться?" required maxlength="64"
-                    autocomplete="off">
-                </label>
-              </div>
-              <div class="questions__input-wrapper custom-input" data-validate-type="phone" data-required>
-                <label aria-label="Укажите телефон.">
-                  <input type="tel" name="customer-phone" placeholder="Телефон" required maxlength="24" autocomplete="off">
-                </label>
-              </div>
-              <button class="questions__button button" type="submit">Отправить</button>
-            </form>
           </div>
         </section>
 
         <section class="contacts" id="contacts">
-          <div class="contacts__container">
-            <div class="contacts__text-wrapper">
-
-              <div class="contacts__title title-block">
-                <h2 class="title-block__title">Контакты</h2>
-                <span class="title-block__title-shadow">Контакты</span>
+          <div class="contacts__container container">
+            <div class="contacts__main-wrapper">
+              <h2 class="contacts__title title">Контакты</h2>
+              <div class="contacts__info-wrapper">
+                <div class="contacts__info-item">
+                  <span class="contacts__info-title">Центральный офис</span>
+                  <span class="contacts__info-value">г. Новосибирск, ул. Щетинкина&nbsp;68, <br>культурный центр &laquo;Бейт Менахем&raquo;</span>
+                </div>
+                <div class="contacts__info-item">
+                  <span class="contacts__info-title">Телефон</span>
+                  <a class="contacts__info-value link" href="tel:896387687676">+7 963 876 876 76</a>
+                </div>
+                <div class="contacts__info-item">
+                  <span class="contacts__info-title">E-mail</span>
+                  <a class="contacts__info-value link" href="mailto:info@masa.ru">Info@masa.ru</a>
+                </div>
               </div>
-
-              <p class="contacts__description">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
-
-              <ul class="contacts__list">
-
-                <li class="contacts__item">
-                  <svg width="26" height="26">
-                    <use xlink:href="./img/sprite.svg#phone"></use>
-                  </svg>
-                  <div class="contacts__item-wrapper">
-                    <span class="contacts__item-title">Телефон</span>
-                    <a class="contacts__item-content link link--dark" href="tel:88005555555">8 983 745 45 45</a>
-                  </div>
-                </li>
-
-                <li class="contacts__item">
-                  <svg width="26" height="26">
-                    <use xlink:href="./img/sprite.svg#mail"></use>
-                  </svg>
-                  <div class="contacts__item-wrapper">
-                    <span class="contacts__item-title">E-mail</span>
-                    <a class="contacts__item-content link link--dark" href="mailto:info@lifetour.com">info@lifetour.com</a>
-                  </div>
-                </li>
-
-                <li class="contacts__item">
-                  <svg width="26" height="26">
-                    <use xlink:href="./img/sprite.svg#mark"></use>
-                  </svg>
-                  <div class="contacts__item-wrapper">
-                    <span class="contacts__item-title">Адрес</span>
-                    <span class="contacts__item-content">г. Москва, пр-т Мира,<br> д. 14, офис 101</span>
-                  </div>
-                </li>
-
-              </ul>
             </div>
             <div class="contacts__map-wrapper" id="map">
               <picture>
-                <source media="(max-width: 767px)" width="290" height="320" srcset="./img/map/map-m.webp 1x, ./img/map/map-m@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1199px)" width="678" height="340" srcset="./img/map/map-t.webp 1x, ./img/map/map-t@2x.webp 2x" type="image/webp">
-                <source srcset="./img/map/map-d.webp 1x, ./img/map/map-d@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" width="290" height="320" srcset="./img/map/map-m.jpg 1x, ./img/map/map-m@2x.jpg 2x">
-                <source media="(max-width: 1199px)" width="678" height="340" srcset="./img/map/map-t.jpg 1x, ./img/map/map-t@2x.jpg 2x">
-                <img width="585" height="324" alt="г. Москва, пр-т Мира, д. 14, офис 101" src="./img/map/map-d.jpg" srcset="./img/map/map-d@2x.jpg 2x">
+                <source media="(max-width: 767px)" width="290" height="240" srcset="./img/contacts/map-m.webp 1x, ./img/contacts/map-m@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1199px)" width="678" height="500" srcset="./img/contacts/map-t.webp 1x, ./img/contacts/map-t@2x.webp 2x" type="image/webp">
+                <source srcset="./img/contacts/map-d.webp 1x, ./img/contacts/map-d@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" width="290" height="240" srcset="./img/contacts/map-m.jpg 1x, ./img/contacts/map-m@2x.jpg 2x">
+                <source media="(max-width: 1199px)" width="678" height="500" srcset="./img/contacts/map-t.jpg 1x, ./img/contacts/map-t@2x.jpg 2x">
+                <img width="1240" height="500" alt="#" src="./img/contacts/map-d.jpg" srcset="./img/contacts/map-d@2x.jpg 2x" aria-hidden="true">
               </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="feedback" id="feedback">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <div class="feedback__container container">
+            <div class="feedback__bg">
+              <picture>
+                <source media="(max-width: 1199px)" width="780" height="1024" srcset="./img/feedback/img-t.webp 1x, ./img/feedback/img-t@2x.webp 2x" type="image/webp">
+                <source srcset="./img/feedback/img-d.webp 1x, ./img/feedback/img-d@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1199px)" width="780" height="1024" srcset="./img/feedback/img-t.jpg 1x, ./img/feedback/img-t@2x.jpg 2x">
+                <img width="1240" height="803" alt="#" src="./img/feedback/img-d.jpg" srcset="./img/feedback/img-d@2x.jpg 2x" aria-hidden="true">
+              </picture>
+            </div>
+            <div class="feedback__form-wrapper" data-form-validate>
+              <p class="feedback__form-title">Напишите нам</p>
+              <p class="feedback__form-text">Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash;
+            мы&nbsp;на&nbsp;них ответим!</p>
+              <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="feedback__custom-input custom-input custom-input--alt" data-validate-type="text" data-limitation="name" data-required>
+                  <label>
+                    <span class="custom-input__label">Имя</span>
+                    <input type="text" name="customer-name" required maxlength="64" autocomplete="off">
+                  </label>
+                </div>
+                <div class="custom-input custom-input--alt" data-validate-type="phone" data-required>
+                  <label>
+                    <span class="feedback__custom-input custom-input__label">Телефон</span>
+                    <input type="tel" name="customer-phone" required maxlength="32" autocomplete="off">
+                  </label>
+                </div>
+                <div class="feedback__custom-input custom-textarea custom-textarea--alt" data-validate-type="text" data-required>
+                  <label>
+                    <span class="custom-textarea__label">Ваше сообщение</span>
+                    <textarea name="user-text" class=""></textarea>
+                  </label>
+                </div>
+                <div class="feedback__select-wrapper">
+                  <span class="feedback__select-label">Выберите город</span>
+                  <div class="custom-select custom-select--alt" data-select="" data-validate-type="select" data-name="some-name"
+                    data-id="feedback-city" data-required>
+                    <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                        class="custom-select__text"></span><span class="custom-select__icon">
+                        <svg width="14" height="6" stroke="#484848">
+                          <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                      </span></button>
+                    <ul class="custom-select__list" role="listbox">
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">
+                        Москва</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
+                        Санкт-Петербург</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+                        Краснодар</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">
+                        Ростов</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="feedback__custom-toggle custom-toggle custom-toggle--alt custom-toggle--checkbox" data-validate-type="checkbox">
+                  <label>
+                    <input type="checkbox" value="user-agreement-1" name="user-agreement">
+                    <span class="custom-toggle__icon">
+                      <svg width="8" height="6" stroke="#ffffff">
+                        <use xlink:href="./img/sprite.svg#icon-check"></use>
+                      </svg>
+                    </span>
+                    <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="feedback__submit-button button button--alt" type="submit" aria-label="Отправить форму.">
+                  <span class="button__text">Отправить</span>
+                  <span class="button__icon-wrapper">
+                    <svg width="10" height="10" stroke="#ffffff">
+                      <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </form>
             </div>
           </div>
         </section>
@@ -1480,68 +954,211 @@
       </main>
 
       <footer class="main-footer">
-        <div class="main-footer__container">
-          <div class="main-footer__content-wrapper">
-            <a class="main-footer__logo" href="index.html" aria-label="Логотип. Перейти на главную.">
-              <svg width="205" height="60" fill="#2D383F">
+        <div class="main-footer__container container">
+          <div class="main-footer__nav-wrapper">
+            <a class="main-footer__logo link" href="index.html" aria-label="Логотип. Перейти на главную.">
+              <svg width="52" height="52">
                 <use xlink:href="./img/sprite.svg#logotype"></use>
               </svg>
             </a>
-            <div class="main-footer__menu">
-              <ul class="main-footer__menu-list">
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#nearest-tours">Туры</a>
-                </li>
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#training">Обучение</a>
-                </li>
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#about">О нас</a>
-                </li>
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#reviews">Отзывы</a>
-                </li>
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#photo-gallery">Фотографии</a>
-                </li>
-                <li class="main-footer__menu-item">
-                  <a class="main-footer__menu-link menu-item menu-item--dark" href="#contacts">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="main-footer__phone-wrapper">
-              <a class="main-footer__phone link link--dark" href="tel:88007253232">
-                8 800 725 32 32
-              </a>
-            </div>
+            <ul class="main-footer__menu-list">
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#about">О проекте</a>
+              </li>
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#programs">Программы</a>
+              </li>
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#how-to-go">Как поехать</a>
+              </li>
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#news">Новости</a>
+              </li>
+              <li class="main-footer__menu-item">
+                <a class="main-footer__menu-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
           </div>
           <ul class="main-footer__social-list">
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#" aria-label="Перейти на страницу компании в VK.">
-                <svg width="16" height="9" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#vk"></use>
+                <svg width="16" height="9" fill="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#" aria-label="Перейти на страницу компании в Одноклассниках.">
-                <svg width="9" height="16" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#odnoklassniki"></use>
+                <svg width="10" height="16" fill="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-odnoklassniki"></use>
                 </svg>
               </a>
             </li>
             <li class="main-footer__social-item">
               <a class="main-footer__social-link" href="#" aria-label="Перейти на страницу компании в Reddit.">
-                <svg width="14" height="15" fill="#2D383F">
-                  <use xlink:href="./img/sprite.svg#reddit"></use>
+                <svg width="15" height="15" fill="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-reddit"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <a class="main-footer__policy link link--dark" href="#">Политика конфиденциальности</a>
+          <div class="main-footer__info-wrapper">
+            <span class="main-footer__copyright">Masa © 2023 Все права защищены</span>
+            <a class="main-footer__policy link" href="#">Политика конфиденциальности</a>
+          </div>
         </div>
       </footer>
+    </div>
 
+    <div class="modal-menu modal-menu--preload" data-modal="menu">
+      <div class="modal-menu__wrapper">
+        <div class="modal-menu__overlay" data-close-modal></div>
+        <div class="modal-menu__content">
+          <button class="modal-menu__close-button menu-button menu-button--opened" data-close-modal>
+            <span class="menu-button__text">Меню</span>
+            <span class="menu-button__icon-wrapper">
+              <svg width="16" height="16" stroke="#ffffff">
+                <use xlink:href="./img/sprite.svg#icon-cross"></use>
+              </svg>
+            </span>
+          </button>
+          <ul class="modal-menu__list">
+            <li class="modal-menu__item">
+              <a class="modal-menu__link" href="#about" data-close-modal>О проекте</a>
+            </li>
+            <li class="modal-menu__item modal-menu__item--sub-menu">
+              <a class="modal-menu__link" href="#programs" data-close-modal>Программы</a>
+              <button class="modal-menu__sub-button modal-menu__sub-button" aria-label="Открыть подменю элемента.">
+                <svg width="12" height="12" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+              <ul class="modal-menu__sub-menu modal-menu__sub-menu--closed">
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Стажировки</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Волонтёрство</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Учёба</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Религия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="modal-menu__item">
+              <a class="modal-menu__link" href="#how-to-go" data-close-modal>Как поехать</a>
+            </li>
+            <li class="modal-menu__item">
+              <a class="modal-menu__link" href="#reviews" data-close-modal>Отзывы</a>
+            </li>
+            <li class="modal-menu__item modal-menu__item--sub-menu">
+              <a class="modal-menu__link" href="#news" data-close-modal>Новости</a>
+              <button class="modal-menu__sub-button" aria-label="Открыть подменю элемента.">
+                <svg width="12" height="12" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+              <ul class="modal-menu__sub-menu modal-menu__sub-menu--closed">
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Общее</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Волонтёрство</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Стажировки</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Карьера</a>
+                </li>
+                <li class="modal-menu__sub-item">
+                  <a class="modal-menu__sub-link" href="#" data-close-modal>Путешествия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="modal-menu__item">
+              <a class="modal-menu__link" href="#contacts" data-close-modal>Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-feedback modal-feedback--preload" data-modal="feedback">
+      <div class="modal-feedback__wrapper">
+        <div class="modal-feedback__overlay" data-close-modal></div>
+        <div class="modal-feedback__content" data-form-validate data-callback="base">
+          <button class="modal-feedback__close" type="button" aria-label="Закрыть всплывающее окно." data-close-modal>
+            <svg width="16" height="16" stroke="#316dc2">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <p class="modal-feedback__title">Напишите нам</p>
+          <p class="modal-feedback__text">Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash;
+            мы&nbsp;на&nbsp;них ответим!</p>
+          <form class="modal-feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="custom-input" data-validate-type="text" data-limitation="name" data-required>
+              <label>
+                <span class="custom-input__label">Имя</span>
+                <input type="text" name="customer-name" required maxlength="64" autocomplete="off">
+              </label>
+            </div>
+            <div class="custom-input" data-validate-type="phone" data-required>
+              <label>
+                <span class="custom-input__label">Телефон</span>
+                <input type="tel" name="customer-phone" required maxlength="32" autocomplete="off">
+              </label>
+            </div>
+            <div class="modal-feedback__select-wrapper">
+              <span class="modal-feedback__label">Выберите город</span>
+              <div class="custom-select" data-select="" data-validate-type="select" data-name="some-name"
+                data-id="modal-feedback-city" data-required>
+                <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                    class="custom-select__text"></span><span class="custom-select__icon">
+                    <svg width="14" height="6" stroke="#484848">
+                      <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">
+                    Москва</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
+                    Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+                    Краснодар</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">
+                    Ростов</li>
+                </ul>
+              </div>
+            </div>
+            <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+              <label>
+                <input type="checkbox" value="user-agreement-1" name="user-agreement">
+                <span class="custom-toggle__icon">
+                  <svg width="8" height="6" stroke="#ffffff">
+                    <use xlink:href="./img/sprite.svg#icon-check"></use>
+                  </svg>
+                </span>
+                <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+              </label>
+            </div>
+            <button class="modal-feedback__submit-button button" type="submit" aria-label="Отправить форму.">
+              <span class="button__text">Отправить</span>
+              <span class="button__icon-wrapper">
+                <svg width="10" height="10" stroke="#ffffff">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>
